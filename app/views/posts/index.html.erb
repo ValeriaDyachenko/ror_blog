@@ -1,0 +1,16 @@
+<ul>
+<!-- форма отображение всех постов -->
+<% @posts.each do |post| %>
+ <li >
+ <!--  отображение каждого поста -->
+   <h1 class="t-align">   
+    <%= post.title %>
+    <%= link_to 'Delete', post_path(post),
+           method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-success home-link" %>
+   <%= link_to 'Edit', edit_post_path(post) , :class => "btn btn-success home-link" %>  
+   <%= link_to 'Show', post, :class => "btn btn-success home-link "  %>
+   </h1>      
+ </li>
+ <hr>
+<% end %>
+</ul>

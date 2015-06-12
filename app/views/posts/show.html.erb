@@ -1,0 +1,10 @@
+<!-- контейнер просмотра записи -->
+<div class="block-center">
+	<h1><%= @post.title %></h1>
+	<a href="/" class="btn btn-success">Back to Blog</a>
+	<%= link_to 'Edit', edit_post_path(@post),:class => "btn btn-success " %>	
+	<%= link_to 'Delete', post_path(@post),
+           method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-success " %>
+</div>
+<br>
+<p><%= @post.body %></p>

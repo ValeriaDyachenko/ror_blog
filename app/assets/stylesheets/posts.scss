@@ -1,0 +1,59 @@
+@import "bootstrap";
+body {
+        padding-top: 75px;
+        width: 100%;
+        text-align: center;
+      }
+      .starter-template {
+        padding: 40px 15px;
+        text-align: center;
+      }
+      .container_header {
+       width: 70%;       
+      }
+      .container_blog{
+        width: 70%;    
+      }
+      .navbar-header{
+        width: 20%
+      }
+      li{
+
+        list-style-type:none;
+      }
+      ul{
+                margin: 0;
+        padding: 0;
+      }
+      .home-link{
+        /*background: red;*/
+          float: right; 
+          margin: 0 5px             
+      }
+      p{
+        text-indent:20px;
+        text-align: left;
+      }
+      .t-align{
+        text-align: left;
+      }
+        input[type="text"]{
+    width: 90%
+  }
+  .center{
+  	margin-left: -70px;
+  	left: 50%;
+  	width: 100px;
+  	position: relative;
+  	text-align: center;
+  }
+  textarea{
+    width: 90%;
+  }
+.pcenter{
+  	margin-left: -100px;
+  	left: 50%;
+  	width: 200px;
+  	position: relative;
+  	text-align: center;
+}
